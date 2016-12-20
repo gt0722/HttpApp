@@ -1,0 +1,55 @@
+1.常见的3中架构
+a.console/server
+b.client/server
+c.browser/server
+
+www.baidu.com
+2.HTTP协议
+Hyper Text Transfer Protocol(超文本传输协议，互联网上应用最为广泛的一种协议)
+协议核心包含两种机制：
+请求机制：
+用户发送一个请求，浏览器请求解析，发送到服务器
+解析后发送的内容如下：
+GET / HTTP/1.1 -->提交方式get/post   HTTP协议的版本号，目前1.1的版本应用最为广泛
+Accept: text/html, application/xhtml+xml, */* -->传输的格式
+Accept-Language: zh-CN -->接收的语言
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+Accept-Encoding: gzip, deflate -->接收的格式，以压缩文件的格式
+Host: www.baidu.com -->主机
+Connection: Keep-Alive -->连接，一小会
+Cookie: BAIDUID=DA8098238589C04EBDAE3D7A810F86F4:FG=1; BIDUPSID=AFF823D0447B71637581FB1D39A27342; PSTM=1473541262; pgv_pvi=3289479168; H_PS_PSSID=1461_21100_20857_20733_20837_20885; BD_UPN=1124314351; BD_LAST_QID=15788408395524144160; BD_HOME=0
+-->缓存
+
+响应机制：
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=ISO-8859-1
+Transfer-Encoding: chunked(传输过程中的编码格式)
+Date: Thu, 08 Sep 2016 07:47:57 GMT(日期)
+
+状态码：
+以2开头成功
+3开头需要转接  
+4开头客户端错误 
+5开头服务器端错误
+
+3.web工程的目录结构：
+Test
+src->存放开发的源文件(.java)
+WebRoot
+	->web-inf
+		->lib:项目中引用的jar
+		->classes:class文件存放的地方
+		->web.xml:web项目的核心文件
+		->images/js/css
+		->jsp/html->页面
+	->meta-inf:存放我们项目的版本号，classpath...
+
+
+4.jsp页面的运行原理
+
+
+
+
+
+
